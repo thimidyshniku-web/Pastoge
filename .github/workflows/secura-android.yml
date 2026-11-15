@@ -19,6 +19,9 @@ jobs:
       - name: Generate Android platform project
         working-directory: secura/android
         run: flutter create --platforms=android --project-name=secura .
+      - name: Remove generated template widget test
+        working-directory: secura/android
+        run: rm -f test/widget_test.dart
       - name: Resolve packages
         working-directory: secura/android
         run: flutter pub get
