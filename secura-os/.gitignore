@@ -1,0 +1,13 @@
+# Local AOSP trees and outputs
+aosp/
+out/
+.repo/
+*.img
+*.qcow2
+*.key
+*.pem
+*.pk8
+*.p12
+*.jks
+*.keystore
+*.log
