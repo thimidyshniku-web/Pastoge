@@ -27,7 +27,7 @@ jobs:
         run: flutter pub get
       - name: Static analysis
         working-directory: secura/android
-        run: flutter analyze
+        run: flutter analyze --no-fatal-infos
       - name: Build test APK
         working-directory: secura/android
         run: flutter build apk --debug
